@@ -9,9 +9,8 @@ class ProductDashBoard extends Component {
             <header>
 
             </header>
-            <ProductTile />
+            <ProductTile customClass="product-tile-container"/>
             <footer>
-
             </footer>
         </div>);
     }
