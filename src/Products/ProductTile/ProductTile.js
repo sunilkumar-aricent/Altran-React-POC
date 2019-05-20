@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import './ProductTile.css'
+import './ProductTile.scss'
 class ProductTile extends Component {
 
     render() {
-        return (<div className="ProductTileController">
+        return (<div className="product-tile-container">
             <p>ProductTile</p>
         </div>)
     }
