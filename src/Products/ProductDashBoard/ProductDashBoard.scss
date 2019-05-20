@@ -1,21 +1,19 @@
 .main-container {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
 
   header {
     background-color: #666;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
+    flex: 0 0 50px;
   }
-
+  .product-tile-container{
+    flex: 1 1 auto;
+  }
   footer {
-    height: 3.7%;
     background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
+    flex: 0 0 50px;
   }
 
 }
