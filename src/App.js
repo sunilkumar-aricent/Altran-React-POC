@@ -4,7 +4,7 @@ import ProductDashBoard from './Products/ProductDashBoard/ProductDashBoard'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <ProductDashBoard />
     </div>
   );

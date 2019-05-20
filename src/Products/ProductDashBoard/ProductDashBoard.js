@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import './ProductDashBoard.css'
+import './ProductDashBoard.scss'
 import ProductTile from '../ProductTile/ProductTile';
 
 class ProductDashBoard extends Component {
 
     render() {
-        return (<div className="MainController">
+        return (<div className="main-container">
             <header>
 
             </header>

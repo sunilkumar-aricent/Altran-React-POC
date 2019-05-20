@@ -1,4 +1,8 @@
-header {
+.main-container {
+  height: 100%;
+  width: 100%;
+
+  header {
     background-color: #666;
     padding: 30px;
     text-align: center;
@@ -7,15 +11,11 @@ header {
   }
 
   footer {
-      height: 3.7%;
+    height: 3.7%;
     background-color: #777;
     padding: 10px;
     text-align: center;
     color: white;
   }
 
-  .MainController {
-    height: 100%;
-    width: 100%;
-    position: relative;
 }
