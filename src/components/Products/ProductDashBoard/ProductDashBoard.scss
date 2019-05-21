@@ -10,6 +10,13 @@
   }
   .product-tile-container{
     flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+   // overflow: scroll;
+    margin: auto;
+    align-content: baseline;
+    //justify-content: center;
+    width: 90%;
   }
   footer {
     background-color: #777;
