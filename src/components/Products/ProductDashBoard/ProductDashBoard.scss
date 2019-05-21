@@ -1,0 +1,19 @@
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+
+  header {
+    background-color: #666;
+    flex: 0 0 50px;
+  }
+  .product-tile-container{
+    flex: 1 1 auto;
+  }
+  footer {
+    background-color: #777;
+    flex: 0 0 50px;
+  }
+
+}
