@@ -1,0 +1,32 @@
+.search-box-container{
+    display: flex;
+    justify-content: center;
+.search-box{
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #77736e;
+    text-align: center;
+    margin-left: -24%;
+    margin-top: 2px;
+}
+.search-box:hover{
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #d88015;
+    text-align: center;
+    margin-left: -24%;
+    margin-top: 2px;
+}
+.search-box:focus{
+    height: 100%;
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #f7644a;
+    text-align: center;
+    margin-left: -24%;
+    margin-top: 2px;
+    outline: aqua;
+}
+}
