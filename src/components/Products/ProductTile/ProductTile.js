@@ -11,6 +11,7 @@ function ProductTile(props) {
                 <br />Price : {product.Price}
             </div></div>);
     }
+    
     return (<div className={props.customClass}>
         {ProductRender(props.products)}
     </div>)
