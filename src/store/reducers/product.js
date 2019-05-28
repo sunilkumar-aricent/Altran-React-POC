@@ -1,8 +1,7 @@
 import * as actionTypes from '../actions/actionConstants'
-import { INITIAL_PAGE } from '../../constants/constants'
 
 const initialState = {
-    products: [],
+    products: []
 }
 
 const productReducer = (state = initialState, action) => {
@@ -14,4 +13,5 @@ const productReducer = (state = initialState, action) => {
        default :  return state;
     }
 } 
+
 export default productReducer   

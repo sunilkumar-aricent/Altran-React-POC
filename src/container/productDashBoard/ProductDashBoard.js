@@ -25,7 +25,7 @@ class ProductDashBoard extends Component {
     }
 
     componentWillMount() {
-        this.props.getData()
+        this.props.getProduct()
     }
 
     render() {
@@ -52,7 +52,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = {
     handlePageChange: actions.handlePageChange,
-    getData: actions.getProduct
+    getProduct: actions.getProduct
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductDashBoard)
