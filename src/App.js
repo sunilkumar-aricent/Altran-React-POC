@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ProductDashBoard from './components/Products/ProductDashBoard/ProductDashBoard'
+import ProductDashBoard from './container/productDashBoard/ProductDashBoard'
 
 function App() {
   return (
