@@ -3,7 +3,6 @@ import { INITIAL_PAGE } from '../../constants/constants'
 
 const initialState = {
     products: [],
-    activePage : INITIAL_PAGE
 }
 
 const productReducer = (state = initialState, action) => {
@@ -12,11 +11,7 @@ const productReducer = (state = initialState, action) => {
             ...state,
             products: action.state.data
         }
-        case actionTypes.PAGE_LOAD: return {
-            ...state,
-            activePage: action.activePage
-        }
-      default :  return state;
+       default :  return state;
     }
 } 
 export default productReducer   

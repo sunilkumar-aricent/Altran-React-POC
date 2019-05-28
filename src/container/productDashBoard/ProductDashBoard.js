@@ -45,8 +45,8 @@ class ProductDashBoard extends Component {
 
 const mapStateToProps = state => {
     return {
-        products: state.products,
-        activePage: state.activePage
+        products: state.products.products,
+        activePage: state.activePage.activePage
     }
 };
 
