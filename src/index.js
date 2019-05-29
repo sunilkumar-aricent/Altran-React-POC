@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './app';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 import { createStore , applyMiddleware , combineReducers} from 'redux'
 import thunk from 'redux-thunk';
-import productReducer from './store/reducers/product'
-import pageReducer from './store/reducers/activePage'
+import productReducer from './store/reducers/productReducer'
+import activePageReducer from './store/reducers/activePageReducer'
 
 const rootReducer = combineReducers({
-    activePage : pageReducer,
+    activePage : activePageReducer,
     products   : productReducer
 })
 const store = createStore(rootReducer,applyMiddleware(thunk));
