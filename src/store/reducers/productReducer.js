@@ -8,7 +8,7 @@ const productReducer = (state = initialState, action) => {
     switch (action.type) {
         case actionTypes.PRODUCT_LOAD: return {
             ...state,
-            products: action.state.data
+            products: action.data
         }
        default :  return state;
     }

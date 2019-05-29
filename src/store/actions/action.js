@@ -6,7 +6,7 @@ export const getProduct = (name) => {
         axios.get('/res/products.json')
             .then(res => {
                 const products = res.data;
-                dispatch({ type: PRODUCT_LOAD, state: { data: products } });
+                dispatch({ type: PRODUCT_LOAD, data: products });
             });
     };
 }
