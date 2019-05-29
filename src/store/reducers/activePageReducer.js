@@ -5,7 +5,7 @@ const initialState = {
     activePage : INITIAL_PAGE
 }
 
-const pageReducer = (state = initialState, action) => {
+const activePageReducer = (state = initialState, action) => {
     switch (action.type) {
       case actionTypes.PAGE_LOAD: return {
             ...state,
@@ -14,4 +14,4 @@ const pageReducer = (state = initialState, action) => {
       default :  return state;
     }
 } 
-export default pageReducer   
+export default activePageReducer   
