@@ -1,0 +1,17 @@
+[
+    {
+        "Id": 1,
+        "Name": "New Arrivals Foot-Wear",
+        "ImgUrl": "https://images-eu.ssl-images-amazon.com/images/G/31/img19/shoes/February/Newarrivals/GW/Tallhero/DesktopTallHero_1500x600-new-arrivals-shoes._CB453274552_.jpg"
+    },
+    {
+        "Id": 2,
+        "Name": "New Arrivals Mobile",
+        "ImgUrl": "https://images-eu.ssl-images-amazon.com/images/G/31/img19/Wireless/Xiaomi/RedmiY3/New_KV/Sale_Is_On/D10293443_BAU_Mi_Redmi_Y3_DesktopTallHero_1500x600._CB463959293_.jpg"
+    },
+    {
+        "Id": 3,
+        "Name": "Food-Items",
+        "ImgUrl": "https://images-eu.ssl-images-amazon.com/images/G/31/img17/Pantry/May19BAU/GW/BAU/1172183_Shelf_1500x600._CB462846464_.jpg"
+    }
+]

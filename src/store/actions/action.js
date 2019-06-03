@@ -1,12 +1,12 @@
-import axios from 'axios'
-import { PRODUCT_LOAD, PAGE_LOAD } from '../actions/actionConstants'
+import axios from 'axios';
+import {  PAGE_LOAD } from '../actions/actionConstants';
 
-export const getProduct = (name) => {
+export const  getData = (URL, actionType )=>{
     return function (dispatch) {
-        axios.get('/res/products.json')
+        axios.get(URL)
             .then(res => {
-                const products = res.data;
-                dispatch({ type: PRODUCT_LOAD, data: products });
+                const renderData = res.data;
+                dispatch({ type: actionType, data: renderData });
             });
     };
 }

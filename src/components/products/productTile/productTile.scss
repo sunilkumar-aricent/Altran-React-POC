@@ -1,18 +1,29 @@
-.product{
-    border: 1px solid rgb(43, 42, 42);
-    background: transparent;
-    margin-left: 4vw;
-    margin-top: 3.3vh;
-    height: min-content;
-    max-height: 40vh;
-    .product-description{
-        border-top: 1px solid rgb(20, 20, 20);
-        padding: 2px;
+.card{
+    background-color: #f0f2fd;
+   width: 15rem;
+   flex-direction: row-reverse;
+   margin: 1% 0 0% 1%;
+   box-shadow: 3px 3px 5px #aaaaaa;
+   .card-img-top{
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 79px;
+    height: 104px;
+    margin-bottom: 10px;
+    background-color: black;
     }
-
-    img{
-        border: 1px solid #ccc;
-    }
+  }
+  .card:hover{
+    box-shadow: 20px 20px 20px  #aaaaaa;
+  }
+  .card-body {
+    padding: 0.50rem;
+    .card-title {
+        h5{
+          margin-bottom: 0;
+        }
+      margin-bottom: 0;
+  }
 }
-    
+   
     

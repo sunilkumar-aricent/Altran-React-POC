@@ -8,10 +8,12 @@ import { createStore , applyMiddleware , combineReducers} from 'redux'
 import thunk from 'redux-thunk';
 import productReducer from './store/reducers/productReducer'
 import activePageReducer from './store/reducers/activePageReducer'
+import carouselProductsReducer from './store/reducers/carouselProductsReducer'
 
 const rootReducer = combineReducers({
     activePage : activePageReducer,
-    products   : productReducer
+    products   : productReducer,
+    carouselProducts : carouselProductsReducer
 })
 const store = createStore(rootReducer,applyMiddleware(thunk));
 
