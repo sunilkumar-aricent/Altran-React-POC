@@ -5,46 +5,55 @@
   flex-flow: column nowrap;
 
   header {
-    background-color: #666;
+    background-color:#63735ef5;
     flex: 0 0 50px;
   }
   
   .product-tile-container{
-    flex: 1 1 auto;
     display: flex;
     flex-flow: row wrap;
-   // overflow: scroll;
-    margin: auto;
+    flex: 1 0 auto;
+    height: calc(100% - 150px);
+    overflow: auto;
+    overflow: auto;
     align-content: baseline;
-    //justify-content: center;
-    width: 90%;
-  }
+    margin-left: 3%;
+   }
 
   .pagination {
+    display: inline-block;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    height:50px;
+    margin-bottom: 0px;
     li{
     list-style-type: none;
     display: inline-block;
-    padding: 8px 16px;
-    background: #797171;
+    padding: 6px 15px;
+    background: #b1b1b1a6;
     margin: 5px;
-    height: 18px;
+    border: 1px solid rgba(111, 107, 108, 0.44);
+    border-radius: 19px;
+   
       a{
        text-decoration: none;
         color: unset;
        }
     }
    .active{
-        background: #484e4e;
+        background: #8f9292;
     }
     .disabled{
-      background: #b7b0b0;
+      background: #f7eded;
+      color: #bdb1b1;
     }
        
   }
 
   footer {
-    background-color: #777;
-    flex: 0 0 50px;
+    background-color: #607562;
+    flex: 0 0 40px;
   }
 
 }

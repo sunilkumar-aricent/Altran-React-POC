@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 import './productDashBoard.scss'
 import ProductTile from '../../components/products/productTile/productTile';
 import Pagination from 'react-js-pagination';
-import { ITEMS_PER_PAGE, PAGE_RANGE } from '../../constants/constants'
+import { ITEMS_PER_PAGE, PAGE_RANGE, PRODUCTS_URL, CAROUSEL_PRODUCTS_URL } from '../../constants/constants'
 import { connect } from 'react-redux';
 import * as actions from '../../store/actions/action'
+import * as actionTypes from '../../store/actions/actionConstants'
+import CarouselRender from '../../components/products/productCarouselView/productsCarousel';
 
 class ProductDashBoard extends Component {
 
@@ -25,7 +27,8 @@ class ProductDashBoard extends Component {
     }
 
     componentWillMount() {
-        this.props.getProduct()
+        this.props.getCarouselData(CAROUSEL_PRODUCTS_URL, actionTypes.CAROUSEL_PRODUCTS_LOAD)
+        this.props.getProductData(PRODUCTS_URL, actionTypes.PRODUCT_LOAD);
     }
 
     render() {
@@ -35,6 +38,7 @@ class ProductDashBoard extends Component {
         return (<div className="main-container">
             <header>
             </header>
+            <CarouselRender carouselProducts={this.props.carouselProducts}></CarouselRender>
             <ProductTile products={productOnCurrentPage} customClass="product-tile-container" />
             {this.pagination()}
             <footer>
@@ -46,13 +50,15 @@ class ProductDashBoard extends Component {
 const mapStateToProps = state => {
     return {
         products: state.products.products,
-        activePage: state.activePage.activePage
+        activePage: state.activePage.activePage,
+        carouselProducts: state.carouselProducts.carouselProducts
     }
 };
 
 const mapDispatchToProps = {
     handlePageChange: actions.handlePageChange,
-    getProduct: actions.getProduct
+    getCarouselData: actions.getData,
+    getProductData: actions.getData
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProductDashBoard)

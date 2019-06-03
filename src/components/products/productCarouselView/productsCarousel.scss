@@ -1,0 +1,11 @@
+.carousel{
+    position: relative;
+    height: 30%;
+    .carousel-inner{
+    height: 100%;
+    }
+    .carousel-item :active{
+        color: aqua;
+        height: 10px;
+    }
+}
