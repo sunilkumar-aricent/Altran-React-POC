@@ -11,9 +11,6 @@ return carouselProducts.map((carouselProduct)=>
         src={carouselProduct.ImgUrl}
         alt={`${carouselProduct.Id} slide`}
       />
-      <Carousel.Caption>
-        <h1>{carouselProduct.Name}</h1> 
-        </Carousel.Caption>
     </Carousel.Item>
 );
 }
