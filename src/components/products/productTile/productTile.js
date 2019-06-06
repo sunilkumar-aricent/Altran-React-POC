@@ -1,15 +1,16 @@
 import React from 'react'
 import './productTile.scss'
 import Card from 'react-bootstrap/Card'
+import { Link } from 'react-router-dom';
 
 
 function ProductTile(props) {
     let productRender = (products) => {
         return products.map(product =>
             <Card className="text-center" bg="light">
-                <a href="#" >
+               <Link to={`/details/${product.id}`}>
                     <Card.Img variant="top" height="80" src={product.ImgUrl} />
-                </a>
+                    </Link >
                 <Card.Body >
                     <Card.Title>{`Name : ${product.Name}`}</Card.Title>
                     <Card.Text>
